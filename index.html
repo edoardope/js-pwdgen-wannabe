@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="asset/style.css">
+  </head>
+  <body>
+
+    <div class="alert alert-warning alert-dismissible fade show mt-2 ms-4 me-4" role="alert">
+        <strong>Attention!</strong> This is a bad password generator made as an exercise <strong>Dont use it!</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <section class="container-fluid">
+        <div class="mt-5 row justify-content-center">
+            <div id="mainbox" class="col-11 col-lg-9 p-3" >
+                <h1 class="text-center">BAD PASSWORD GENERATOR</h1>
+                <p class="text-center">la password sara costituita da nome + cognome + colore preferito seguiti da 21</p>
+                <hr>
+                <div class="row">
+                    <div class="col-6">
+                        <p class="inp-label">Inserisci il tuo nome</p>
+
+                    </div>
+                    <div class="col-6">
+                        <input id="nome" class="form-control" type="text" placeholder="Default input" aria-label="default input example">
+
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-6">
+                        <p class="inp-label">Inserisci il tuo cognome</p>
+
+                    </div>
+                    <div class="col-6">
+                        <input id="cognome" class="form-control" type="text" placeholder="Default input" aria-label="default input example">
+
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-6">
+                        <p class="inp-label">Inserisci il tuo colore preferito</p>
+
+                    </div>
+                    <div class="col-6">
+                        <input id="color" class="form-control" type="text" placeholder="Default input" aria-label="default input example">
+
+                    </div>
+                </div>
+                <div class="row mt-5 justify-content-center">
+                    <div class="col-4 col-sm-2">
+                        <input class="btn btn-dark" type="button" id="bottone" value="Generate">
+
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-6">
+                        <p class="inp-label">Your new password is here</p>
+                    </div>
+                    <div class="col-6">
+                        <p class="form-control output" id="pass"></p>
+                    </div>
+                </div>
+                 
+                 
+            </div>
+          
+        </div>
+
+    </section>
+
+    <!-- better pass -->
+
+    <section class="container-fluid">
+        <div class="mt-5 row justify-content-center">
+            <div id="mainbox" class="col-11 col-lg-9 p-3" >
+                <h1 class="text-center">NOT SO BAD PASSWORD GENERATOR</h1>
+                <p class="text-center">la password sara costituita dal mix randomico di tutte le lettere appartenti al nome cognome e colore + 10 caratteri extra usando l'algoritmo di Fisher-Yates </p>
+                <hr>
+                <div class="row">
+                    <div class="col-6">
+                        <p class="inp-label">Inserisci il tuo nome</p>
+
+                    </div>
+                    <div class="col-6">
+                        <input id="nome2" class="form-control" type="text" placeholder="Default input" aria-label="default input example">
+
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-6">
+                        <p class="inp-label">Inserisci il tuo cognome</p>
+
+                    </div>
+                    <div class="col-6">
+                        <input id="cognome2" class="form-control" type="text" placeholder="Default input" aria-label="default input example">
+
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-6">
+                        <p class="inp-label">Inserisci il tuo colore preferito</p>
+
+                    </div>
+                    <div class="col-6">
+                        <input id="color2" class="form-control" type="text" placeholder="Default input" aria-label="default input example">
+
+                    </div>
+                </div>
+                <div class="row mt-5 justify-content-center">
+                    <div class="col-4 col-sm-2">
+                        <input class="btn btn-dark" type="button" id="bottone2" value="Generate">
+
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-6">
+                        <p class="inp-label">Your new password is here</p>
+                    </div>
+                    <div class="col-6">
+                        <p class="form-control output" id="pass2"></p>
+                    </div>
+                </div>
+                 
+                 
+            </div>
+          
+        </div>
+
+    </section>
+
+    <!-- <form>
+        <label for="nome">Il tuo nome:</label>
+        <input type="text" id="nome" placeholder="Inserisci il tuo nome qui" maxlength="10" required="required"><br><br>
+        <label for="cognome">Il tuo nome:</label>
+        <input type="text" id="cognome" placeholder="Inserisci il tuo cognome qui" maxlength="10" required="required"><br><br>
+        <label for="color">Colore preferito:</label>
+        <input type="text" id="color" placeholder="Inserisci il tuo colore qui" maxlength="10" required="required"><br><br>
+        
+        <input type="button" id="bottone" value="Vai">
+    </form> -->
+      
+    <!-- <p class="output" id="pass"></p> -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
